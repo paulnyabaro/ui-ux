@@ -14,6 +14,7 @@ section{
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    background-color: #2f363e;
 }
 
 
@@ -36,15 +37,15 @@ section{
 #time .circle svg{
     position: relative;
 }
-#time .circle svg:nth-child(1){
+#time .circle:nth-child(1) svg{
     width: 250px;
     height: 250px;
 }
-#time .circle svg:nth-child(2){
+#time .circle:nth-child(2) svg{
     width: 210px;
     height: 210px;
 }
-#time .circle svg:nth-child(1){
+#time .circle:nth-child(3) svg{
     width: 170px;
     height: 170px;
 }
@@ -53,4 +54,6 @@ section{
     height: 100%;
     fill: transparent;
     stroke: var(--clr);
+    stroke-width: 5;
+    transform: translate(5px, 5px)
 }
