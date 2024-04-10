@@ -71,3 +71,20 @@ section{
     stroke-dasharray: 510;
     stroke-dashoffset: 510;
 }
+.dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+}
+.dots::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr);
+    border-radius: 50%;
+}
