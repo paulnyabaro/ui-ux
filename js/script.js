@@ -20,6 +20,11 @@ setInterval(() =>{
 
     let am = h >= 12 ? "PM" : "AM"
 
+    // Converting to 12 hr system
+    if (h >= 12){
+        h -= 12;
+    }
+
     hours.innerHTML = h;
     minutes.innerHTML = m;
     seconds.innerHTML = s;
