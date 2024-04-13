@@ -106,12 +106,11 @@ section{
     color: var(--white);
     font-family: consolas;
     gap: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .timeBx #hours::after,
-.timeBx #minutes::after,
-.timeBx #seconds::after{
+.timeBx #minutes::after{
     content: ':';
     position: absolute;
 }
