@@ -14,8 +14,8 @@ setInterval(() =>{
     let s = new Date().getSeconds();
 
     hh.style.strokeDashoffset = 510 - (510 * h) / 12;
-    mm.style.strokeDashoffset = 510 - (630 * m) / 60;
-    ss.style.strokeDashoffset = 510 - (760 * s) / 60;
+    mm.style.strokeDashoffset = 630 - (630 * m) / 60;
+    ss.style.strokeDashoffset = 760 - (760 * s) / 60;
 
     // 360 / 6
     sec_dot.style.transform = `rotateZ(${s * 6}deg)`;
