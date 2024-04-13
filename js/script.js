@@ -21,9 +21,14 @@ setInterval(() =>{
     let am = h >= 12 ? "PM" : "AM"
 
     // Converting to 12 hr system
-    if (h >= 12){
+    if (h > 12){
         h -= 12;
     }
+
+    // Adding predicing zeros for value below 10
+    h = (h < 10) ? '0' + h: h;
+    m = (m < 10) ? '0' + m: m;
+    s = (s < 10) ? '0' + s: s;
 
     hours.innerHTML = h;
     minutes.innerHTML = m;

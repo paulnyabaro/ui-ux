@@ -109,3 +109,22 @@ section{
     font-size: 1.25rem;
     font-weight: bold;
 }
+.timeBx #hours::after,
+.timeBx #minutes::after,
+.timeBx #seconds::after{
+    content: ':';
+    position: absolute;
+}
+.timeBx div{
+    color: var(--clr);
+    text-shadow: 0 0 10px var(--clr),
+        0 0 20px var(--clr),
+        0 0 40px var(--clr)
+    ;
+}
+.ap{
+    position: absolute;
+    transform: translateY(-15px);
+    font-size: 0.5rem;
+    right: 56px;
+}
